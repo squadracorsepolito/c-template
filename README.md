@@ -37,10 +37,12 @@ This job creates a GitHub release and uploads the build artifacts.
 To use this workflow, ensure your repository has a Makefile with a release target, and the necessary ARM GCC toolchain is compatible with your project setup. 
 Push a tag matching v*.* to trigger the workflow, or manually trigger it through the GitHub Actions interface. 
 The following commands will trigger the action: 
-''' 
+
+```
 git add . 
 git commit -m "v1.0"   
 git tag -a v1.0 -m "Version 1.0"            
 git push origin master --tags 
-''' 
+``` 
+
 Please notice that tags are unique, so change them every time.
